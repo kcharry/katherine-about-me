@@ -1,0 +1,28 @@
+/* home-page class */
+.home-page {
+    
+    /*Layout*/
+    height:100vh;
+    padding: 2rem; 
+    margin: 0 auto;
+
+    /*Coloring*/
+    background-color: #2d545e;
+    color: #F2F0EF;
+
+    /*Text*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+/* about-me class header 1*/
+.about-me h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* about-me class header 2*/
+.about-me h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
