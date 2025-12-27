@@ -1,0 +1,53 @@
+/* home-page class */
+.home-page { 
+    /*Layout*/
+    height:100vh;
+    padding: 2rem; 
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    /*Coloring*/
+    background-color: #2d545e;
+    color: #F2F0EF;
+
+    /*Text*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+/* content class */
+.content{
+    /*Layout*/
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+}
+
+/* about-me class header 1*/
+.about-me h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* about-me class header 2*/
+.about-me h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* about-me class paragraph*/
+.about-me p{
+    padding-right: 2rem
+}
+
+/* profile-pic class*/
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
