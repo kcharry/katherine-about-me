@@ -1,11 +1,21 @@
-import mongoose from 'mongoose';
-const { Schema } = mongoose; 
+import mongoose, { Schema, Document } from "mongoose";
 
-const experienceSchema = new Schema({
-    company: String,
-    title: String,
-    location: String,
-    startDate: String,
-    endDate: String,
-    description: String
+export interface IExperience extends Document {
+    company: string;
+    title: string;
+    location?: string;
+    startDate?: string;
+    endDate?: string;
+    description?: string;
+}
+
+const experienceSchema = new Schema<IExperience>({
+    company: { type: String, required: true },
+    title: { type: String, required: true },
+    location: { type: String },
+    startDate: { type: String },
+    endDate: { type: String },
+    description: { type: String },
 });
+
+export default mongoose.model<IExperience>("Experience", experienceSchema);
