@@ -18,4 +18,4 @@ const experienceSchema = new Schema<IExperience>({
     description: { type: String },
 });
 
-export default mongoose.model<IExperience>("Experience", experienceSchema);
+export default mongoose.models.Experience || mongoose.model<IExperience>("Experience", experienceSchema);

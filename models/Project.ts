@@ -18,4 +18,4 @@ const projectSchema = new Schema({
     githubLink: { type: String },
 });
 
-export default mongoose.model<IProject>("Project", projectSchema)
+export default mongoose.models.Project || mongoose.model<IProject>("Project", projectSchema);
